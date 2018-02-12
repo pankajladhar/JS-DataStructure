@@ -1,6 +1,6 @@
 import Stack from './../usingClass';
 
-describe('Stack usinf Class approach', () => {
+describe('Stack using Class approach', () => {
     it('printStack method should return stack value', () =>{
         let stack, updatedStack;
         stack = new Stack();
