@@ -1,0 +1,31 @@
+{
+  "name": "js-datastructure",
+  "version": "1.0.0",
+  "description": "Collection of DataStructure implmented using Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jest.json --coverage",
+    "test:watch": "jest --config jest.json --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankajladhar/JS-DataStructure.git"
+  },
+  "keywords": [
+    "Data structure",
+    "algorithm"
+  ],
+  "author": "Pankaj Ladhar <ladharpankaj@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pankajladhar/JS-DataStructure/issues"
+  },
+  "homepage": "https://github.com/pankajladhar/JS-DataStructure#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^22.0.6",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
