@@ -2,6 +2,7 @@
 Collection of Data Structure concepts, implemented using Javascript.
 1. [Stack](#stack)
 1. [Queue](#queue)
+1. [BubbleSort](#bubble-sort)
 
 ## Stack
 Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
@@ -32,3 +33,13 @@ Like Stack, Queue is a linear structure which follows a particular order in whic
 | printQueue    | Returns entire queue  |
 
 **[Code Link](https://github.com/pankajladhar/JS-DataStructure/blob/master/Queue/usingFactory.js)**
+
+## Bubble Sort
+Bubble sort, sometimes referred to as sinking sort,
+    is a simple sorting algorithm that repeatedly steps 
+    through the list to be sorted,
+    compares each pair of adjacent items and swaps them 
+    if they are in the wrong order. 
+
+**[Code Link](https://github.com/pankajladhar/JS-DataStructure/blob/master/BubbleSort/index.js)**
+
