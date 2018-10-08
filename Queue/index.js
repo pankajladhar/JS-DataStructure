@@ -18,28 +18,31 @@
     Rear:       Get the last item from queue.
 
 */
-const Queue = () => {
-    let arr = [];
-    return {
-        enqueue: (data) => {
-            arr.push(data)
-        },
 
-        denqueue: () => {
-            arr.shift();
-        },
+class Queue {
+    constructor() {
+        this.storage = []
+    }
 
-        front: () => {
-            return arr[0]
-        },
+    enqueue(data) {
+        this.storage.push(data)
+    }
 
-        rear: () => {
-            return arr[arr.length -1 ]
-        },
+    denqueue() {
+        this.storage.shift();
+    }
 
-        printQueue: () => {
-            return arr;
-        }
+    front() {
+        return this.storage[0]
+    }
+
+    rear() {
+        return this.storage[this.storage.length - 1]
+    }
+
+
+    printQueue() {
+        return this.storage;
     }
 }
 
