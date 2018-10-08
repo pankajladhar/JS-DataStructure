@@ -1,4 +1,4 @@
-import Stack from './../usingClass';
+import Stack from './../index';
 
 describe('Stack using Class approach', () => {
     it('printStack method should return stack value', () =>{
@@ -19,6 +19,7 @@ describe('Stack using Class approach', () => {
         expect(updatedStack[updatedStack.length-1]).toBe(1)
 
         stack.push(2);
+        updatedStack = stack.printStack();
         expect(updatedStack).toEqual([1,2])
         expect(updatedStack[updatedStack.length-1]).toBe(2)
     });
@@ -35,13 +36,15 @@ describe('Stack using Class approach', () => {
         updatedStack = stack.printStack();
         expect(updatedStack).toEqual([1,2,3]);
         stack.pop();
+        updatedStack = stack.printStack();
         expect(updatedStack).toEqual([1,2]);
         stack.pop();
+        updatedStack = stack.printStack();
         expect(updatedStack).toEqual([1]);
     });
 
     it('peek or top method should return top level element', () =>{
-        let stack, updatedStack;
+        let stack;
         stack = new Stack();
         stack.push(1);
         stack.push(2);
@@ -54,7 +57,7 @@ describe('Stack using Class approach', () => {
     });
 
     it('isEmpty method should return true if stack is empty', () =>{
-        let stack, updatedStack;
+        let stack;
         stack = new Stack();
         expect(stack.isEmpty()).toBe(true);
         stack.push(1);
